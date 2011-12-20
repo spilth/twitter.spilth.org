@@ -1,0 +1,19 @@
+---
+title: Favorites
+layout: default
+---
+
+<div id="tweet"></div>
+
+  <script type='text/javascript'>
+  jQuery(function($){
+        $("#tweet").tweet({
+          avatar_size: 32,
+          count: 10,
+          username: "spilth",
+          favorites: true,
+          loading_text: "loading list..."
+        }).bind("loaded",function(){$(this).find("a").attr("target","_blank");});
+      });
+  </script> 
+

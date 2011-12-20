@@ -1,0 +1,20 @@
+---
+title: Retweets
+layout: default
+---
+
+<div id="tweet"></div>
+
+  <script type='text/javascript'>
+      jQuery(function($){
+          $("#tweet").tweet({
+              username: "spilth",
+              avatar_size: 32,
+              count: 10,
+              retweets: true,
+              loading_text: "loading tweets...",
+              refresh_interval: 60
+          });
+      });
+  </script> 
+
